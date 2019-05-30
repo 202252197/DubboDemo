@@ -159,7 +159,7 @@ https://archive.apache.org/dist/zookeeper/zookeeper-3.4.10/zookeeper-3.4.10.tar.
 复制conf/zoo_sample.cfg，并命名为zoo.cfg,打开该文件，修改如下配置：
 ```
 
-![](.\图片储蓄\zookeeper的配置.jpg)
+![](https://github.com/202252197/DubboDemo/blob/master/%E5%9B%BE%E7%89%87%E5%82%A8%E8%93%84/zookeeper%E7%9A%84%E9%85%8D%E7%BD%AE.jpg?raw=true)
 
 ```
 1.修改dataDir路径,上面是默认放大zookeeper目录下,如果使用默认的启动会报错
@@ -295,7 +295,7 @@ service工程的pom.xml中的</project>上方，复制以下内容：
 
 **七大常用标签的联系**
 
-![](E:\dubbo\图片储蓄\TIM图片20190529104611.png)
+![](https://github.com/202252197/DubboDemo/blob/master/%E5%9B%BE%E7%89%87%E5%82%A8%E8%93%84/TIM%E5%9B%BE%E7%89%8720190529104611.png?raw=true)
 
 **七大常用标签分类**
 
@@ -361,7 +361,7 @@ dubbo.jetty.port=8088
 访问http://localhost:8088之后，如下：
 ```
 
-![](E:\dubbo\图片储蓄\wps6533.tmp.jpg)
+![](https://github.com/202252197/DubboDemo/blob/master/%E5%9B%BE%E7%89%87%E5%82%A8%E8%93%84/wps6533.tmp.jpg?raw=true)
 
 ```
 这是早先内置的一个dubbo-monitor，不建议在这里开启jetty容器。
@@ -432,7 +432,7 @@ memcached://
 
 ### Dubbo参数覆盖策略
 
-![](.\图片储蓄\ss.png)
+![](https://github.com/202252197/DubboDemo/blob/master/%E5%9B%BE%E7%89%87%E5%82%A8%E8%93%84/ss.png?raw=true)
 
 ```
 JVM启动-D参数优先，这样可以使用户在部署和启动时进行参数重写，比如在启动时需改变协议的端口。
@@ -496,7 +496,7 @@ timeout默认在consumer中是1000毫秒,consumer如果调用provider的时间�
 如果级别一样，则消费方优先，提供方次之。
 ```
 
-![](./图片储蓄\飒飒jpg.jpg)
+![](https://github.com/202252197/DubboDemo/blob/master/%E5%9B%BE%E7%89%87%E5%82%A8%E8%93%84/%E9%A3%92%E9%A3%92jpg.jpg?raw=true)
 
 ### Dubbo重试机制
 
@@ -526,7 +526,7 @@ timeout默认在consumer中是1000毫秒,consumer如果调用provider的时间�
 (3)然后将剩下的一半提供者升级为新版本
 ```
 
-![](./图片储蓄\TIM图片20190527201639.png)
+![](https://github.com/202252197/DubboDemo/blob/master/%E5%9B%BE%E7%89%87%E5%82%A8%E8%93%84/TIM%E5%9B%BE%E7%89%8720190527201639.png?raw=true)
 
 ```
 注解版配置
@@ -535,7 +535,7 @@ timeout默认在consumer中是1000毫秒,consumer如果调用provider的时间�
 消费者引用服务的时候将改成要使用的版本号就可以了(如下！！！！)
 ```
 
-![](.\图片储蓄\TIM图片20190527202011.png)
+![](https://github.com/202252197/DubboDemo/blob/master/%E5%9B%BE%E7%89%87%E5%82%A8%E8%93%84/TIM%E5%9B%BE%E7%89%8720190527202011.png?raw=true)
 
 ```
 若是将@Reference改成@Reference(version="*")那么就会随机访问一个版本的实现类
@@ -601,7 +601,7 @@ public class UserServiceStub implements UserService {
 直连模式的实现如下方图片!!!!!
 ```
 
-![](.\图片储蓄\dubbo-directly.jpg)
+![](https://github.com/202252197/DubboDemo/blob/master/%E5%9B%BE%E7%89%87%E5%82%A8%E8%93%84/dubbo-directly.jpg?raw=true)
 
 ```
 上面的IP就是provider的IP地址，是写死的IP地址。如果provider的IP地址变了，直连也就失效了。
@@ -782,7 +782,7 @@ public class UserController {
 在Meta-inf/dubbo/internal/com.alibaba.dubbo.rpc.Filter中声明，例如下图：
 ```
 
-![](.\图片储蓄\wps3CBC.tmp.jpg)
+![](https://github.com/202252197/DubboDemo/blob/master/%E5%9B%BE%E7%89%87%E5%82%A8%E8%93%84/wps3CBC.tmp.jpg?raw=true)
 
 ```
 可以看到，它是以键值对的形式定义的拦截器，当我们在使用某个拦截器的时候，指定的类就是处理类。
@@ -917,7 +917,7 @@ ConsistentHash LoadBalance
 向注册中心配置覆盖规则：
 ```
 
-![](E:\dubbo\图片储蓄\TIM图片20190528154319.png)
+![](https://github.com/202252197/DubboDemo/blob/master/%E5%9B%BE%E7%89%87%E5%82%A8%E8%93%84/TIM%E5%9B%BE%E7%89%8720190528154319.png?raw=true)
 
 ```
 其中：

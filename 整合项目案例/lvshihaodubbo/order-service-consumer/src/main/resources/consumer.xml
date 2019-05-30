@@ -1,0 +1,16 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd http://www.springframework.org/schema/contexthttp://www.springframework.org/schema/context/spring-context-3.2.xsd">
+    <import resource="spring.xml"></import>
+    <!-- 1.指定当前服务/应用的名称(同样的服务名相同,不要和别的服务同名) -->
+    <dubbo:application name="order-service-consumer"/>
+    <!-- 2.指定注册中心的位置-->
+    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" client="curator"/>
+    <!-- 3.声明需要调用的远程服务的接口:生产远程服务代理-->
+    <dubbo:reference id="userService" interface="gmall.service.UserService"/>
+    <!-- 4.配置dubbo的监控中心-->
+    <dubbo:monitor protocol="registry" ></dubbo:monitor>
+</beans>
