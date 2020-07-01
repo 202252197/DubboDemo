@@ -26,7 +26,7 @@
     <!-- mybatis版本号 -->
     <mybatis.version>3.4.2</mybatis.version>
     <!--log4j版本号-->
-    <log4j.version>2.9.1</log4j.version>
+    <log4j.version>2.13.3</log4j.version>
   </properties>
 
   <dependencyManagement>
